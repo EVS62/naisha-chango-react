@@ -1,0 +1,26 @@
+.testimonial {
+  background: #f2ede6;
+  text-align: center;
+  padding: 120px 48px;
+}
+.testimonial blockquote { max-width: 800px; margin: 0 auto; }
+.testimonial blockquote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 28px;
+  color: var(--charcoal);
+}
+.testimonial blockquote p em { color: var(--accent); }
+.testimonial cite {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+  font-style: normal;
+}
+@media (max-width: 768px) {
+  .testimonial { padding: 80px 24px; }
+}
