@@ -14,16 +14,19 @@
   box-shadow: 0 1px 0 rgba(0,0,0,0.06);
 }
 .nav__logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
   text-decoration: none;
-  transition: color 0.4s;
+  display: flex;
+  align-items: center;
 }
-.nav--scrolled .nav__logo { color: var(--charcoal); }
+.nav__logo-img {
+  height: 64px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  transition: filter 0.4s;
+}
+.nav--scrolled .nav__logo-img {
+  filter: brightness(0);
+}
 .nav__links {
   display: flex;
   gap: 36px;

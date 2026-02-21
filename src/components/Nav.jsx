@@ -13,7 +13,9 @@ export default function Nav() {
 
   return (
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
-      <a href="#home" className="nav__logo">Interiors by Naisha</a>
+      <a href="#home" className="nav__logo">
+    <img src="/logo.png" alt="Interiors by Naisha" className="nav__logo-img" />
+  </a>
 
       <ul className={`nav__links ${menuOpen ? 'nav__links--open' : ''}`}>
         <li><a href="#portfolio" onClick={() => setMenuOpen(false)}>Projects</a></li>
